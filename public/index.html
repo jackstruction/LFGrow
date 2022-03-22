@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LFGrow Project</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="walletbar">
+                <div id="connect">Connect Wallet</div>
+                <div id="yourbalance">Your Balance is:
+                    <span id="balance"></span>
+                </div>
+        </div>
+            <div id="logo"><img id="logoimg" src="/img/logo.png"></div>
+            <div id="navbar">
+                <div class="navitem">
+                <a class="navlink" href="#sends"></a>
+                </div>
+                <div class="navitem">
+                <a class="navlink" href="#friends"></a>
+                </div>
+                <div class="navitem">
+                <a class="navlink" href="#trends"></a>
+                </div>
+                 <div class="navitem">
+                <a class="navlink" href="#dends"></a>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+            <div class="container" id="sends">
+                <h2>Sends</h2>
+                <!--Create post \ recent posts \ -->
+            </div>
+            <div class="container" id="friends">
+                <h2>Friends</h2>
+                <!-- Friends publications (sort: recent, popular)(filter:mirrors, comments) -->
+            </div>
+            <div class="container" id="trends">
+                <h2>Trends</h2>
+                <!--trending posts and hashtags-->
+                <!-- trend choices: most mirrors, most used hashtag, most comments-->
+
+            </div>
+            <div class="container" id="dends">
+                <h2>dends</h2>
+                <!--dividends of posts that you've charged for-->
+            </div>
+            <div class="container" id="lends">
+                <h2>Lends</h2>
+                <!--Lend out cred or something else to people, idk I'm going off the name scheme -->
+                <!--Maybe something to do with staking so your posts can get traction-->
+            </div>
+
+        </div>
+        <div id="footer">
+<div id="poweredby"><sup>powered by</sup><a href="/">Lens Protocol</a></div>
+</div></body>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="/script/app.js"></script>
+  </html>
