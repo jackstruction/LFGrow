@@ -1,0 +1,28 @@
+{
+  "name": "lfgrow",
+  "version": "1.0.0",
+  "description": "Hackathon Project",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackstruction/LFGrow.git"
+  },
+  "keywords": [
+    "hackathon"
+  ],
+  "author": "jackstruction",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackstruction/LFGrow/issues"
+  },
+  "homepage": "https://github.com/jackstruction/LFGrow#readme",
+  "dependencies": {
+    "graphql": "^16.3.0"
+  }
+}
