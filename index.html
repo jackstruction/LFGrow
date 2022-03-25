@@ -10,28 +10,114 @@
 </head>
 <body>
     <header>
-        <div id="walletbar">
-            <div id="bal"></div>
-            <div id="connect"></div>
-        </div>
     <div id="headerbar">
-    <div id="logocont"><img src="/img/logo.png" id="logo"></div>
-    <nav>
-        <ul id="navlist">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/farm">About</a></li>
-            <li><a href="/market">Contact</a></li>
-            <li><a href="/profile">My Profile</a></li>
-        </ul>
-    </nav>
+    <div id="logocont"><img src="public/img/logo-nobg.png" id="logo"></div>
+    <div id="walletbar">
+        <div id="bal"></div>
+        <div id="claim"></div>
+        <div id="connect"></div>
+    </div>
 </div>
 </header>
-<div id="main">
+<div class="main" id="frontpage">
     <h1>Beet Farm</h1>
     <h2>Welcome to the Farm!</h2>
     <p>
+        Plant Beets, Sell Beets, and Harvest Earnings!
+    </p>
+</div>
+<div class="left"><div class="main" id="upload">
+    <div class="heading"></div>
+    <h1>Mint</h1>
+    <h2>upload a beat to put up for sale </h2>
+    <form>
+        <div id="uploadarea">
+            <input type="file" 
+                id="upload" 
+                accept="audio/*" 
+                capture="microphone" 
+                onchange="uploadBeat()"
+                ><!--this is probably definitely wrong-->
+        </div>
+        <label for="setprice">Set Price:</label>
+        <input type="number" id="setprice" min="0" max="1000" step="0.5" value="0.00">
+        <label for="setroyalty">Set Royalty:</label>
+        <input type="number" id="setroyalty" min="0" max="10" step="0.1" value="0.00"> Beets
+        <button id="uploadbutton" onclick="uploadBeat()">Upload</button>
+    </form>
+</div>
+</div>
+<div class="right">
+<div id="profile">
+    <h1>Profile</h1>
+    <h2>0x...000</h2>
+    <div id="profile">
+        <div id="profilepic"></div>
+        <div id="profiledetails">
+            <p class="profileinfo">Name:</p><input type="text">
+            <p class="profileinfo">Email:</p><input type="text">
+            <p class="profileinfo">Address:</p><input type="text">
+            <p class="profileinfo">Balance:</p><input type="text" nomodify placeholder="0.00">
+        </div>
+    <p id="profilebio">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reiciendis.
     </p>
 </div>
+</div>
+<div class="main" id="market">
+    <div class="heading"></div>
+    <h1>Market</h1>
+    <h2>Browse the market for beats</h2>
+    <div id="marketarea">
+        <div id="marketlist">
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>
+            </div>
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>
+            </div>
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>
+            </div>
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>
+            </div>
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>  
+            </div>
+            <div class="marketbeat">
+                <div class="marketbeatimage"></div>
+                <div class="marketbeatinfo">
+                    <p class="marketbeatname">Beat Name</p>
+                    <p class="marketbeatprice">Price: $0.00</p>
+                    <p class="marketbeatroyalty">Royalty: 0.00%</p>
+                </div>
+            </div>
+
 </body>
 </html>
