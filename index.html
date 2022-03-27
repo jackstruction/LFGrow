@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/scripts/index.js"></script>
-    <stylesheet href="/styles/index.css"></stylesheet>
+   <!--<script src="/scripts/index.js"></script>-->
+    <link rel="stylesheet" href="main.css">
     <title>Beet Farm</title>
 </head>
 <body>
     <header>
-    <div id="headerbar">
-    <div id="logocont"><img src="public/img/logo-nobg.png" id="logo"></div>
-    <div id="walletbar">
-        <div id="bal"></div>
-        <div id="claim"></div>
-        <div id="connect"></div>
+    <div id="headerbar" class="flex-row">
+    <div class="flex-row" id="logocont"><img src="public/img/logo-nobg.png" id="logo"><h1>Beet Farm</h1></div><div class="flex"><div class="main flex-row" id="frontpage">
+        
     </div>
-</div>
+    <div class="flex-row end" id="walletbar">
+        <div id="bal">Your balance is: <span id="balamt" >5</span> MATIC</div>
+        <div id="claim"><button>Claim Balance</button></div>
+        <div id="connect"><button>Connect Wallet</button></div>
+    </div>
+    
+</div></div>
 </header>
 <div class="main" id="frontpage">
     <h1>Beet Farm</h1>
@@ -25,7 +28,7 @@
     <p>
         Plant Beets, Sell Beets, and Harvest Earnings!
     </p>
-</div>
+</div><div class="flex row">
 <div class="left"><div class="main" id="upload">
     <div class="heading"></div>
     <h1>Mint</h1>
@@ -46,12 +49,12 @@
         <button id="uploadbutton" onclick="uploadBeat()">Upload</button>
     </form>
 </div>
-</div>
+</div>  <!---left-->
 <div class="right">
-<div id="profile">
+    <div id="profile">
     <h1>Profile</h1>
     <h2>0x...000</h2>
-    <div id="profile">
+        <div id="profile">
         <div id="profilepic"></div>
         <div id="profiledetails">
             <p class="profileinfo">Name:</p><input type="text">
@@ -63,13 +66,15 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reiciendis.
     </p>
 </div>
-</div>
+</div>  <!-- end of profile-->
+</div>  <!--end of right-->
+</div> <!--end of container-->
 <div class="main" id="market">
     <div class="heading"></div>
     <h1>Market</h1>
     <h2>Browse the market for beats</h2>
     <div id="marketarea">
-        <div id="marketlist">
+        <div  class="flex-row" id="marketlist">
             <div class="marketbeat">
                 <div class="marketbeatimage"></div>
                 <div class="marketbeatinfo">
