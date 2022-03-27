@@ -48,7 +48,8 @@ body{
   margin: 5px;
   
 }
-.marketbeat, .main{background-color: #94f5cd; color: #000; padding: 10px; border-radius: 15px;text-align: center;margin:15px;}
+.main{background-color: #94f5cd; color: #000; padding: 10px; border-radius: 15px;text-align: center;margin:15px;}
+.left{width: 50%;}
 .mktimg{display: block;margin: 0 auto;}
 #marketlist{align-items: center;
 justify-content: space-around;}
